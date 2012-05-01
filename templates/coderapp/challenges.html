@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>
+G-Coder
+</title>
+</head>
+<body>
+<h1>
+Challenges
+</h1>
+{% if challenge_list %}
+<ul>
+	{% for c in challenge_list %}
+		<li><a href=/coder/challenge/{{c.id}}>{{c.title}}</a></li>
+	{% endfor%}
+</ul>	
+{% else %}
+<p> No challenges found </p>
+{% endif %}
+
+</body>
+</html>
