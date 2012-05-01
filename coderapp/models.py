@@ -9,4 +9,4 @@ class Solution(models.Model):
 	challenge = models.ForeignKey(Challenge) #a solution belongs to a challenge
 	#user = model.ForeignKey(User) #a solution has a user
 	location = models.CharField(max_length=200) #a location for the solution. A directory probably
-	score = models.IntegerField() #overall rank? we need more metrics	
+	score = models.IntegerField() #overall rank? we need more metrics
